@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>proyecto prog web 2</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="paraofertas.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Videojuegos</a>
+        <div class="collapse navbar-collapse">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                <li class="nav-item"><a class="nav-link" href="catalogo.html">Catálogo</a></li>
+                <li class="nav-item"><a class="nav-link" href="ofertas.html">Ofertas</a></li>
+                <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container mt-4">
+        <h1 class="display-4 text-center">Los viedojuegos mas comprados con descuento</h1>
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="d-block w-100" src="imagenes para el proyecto/dead by.jpg" alt="First slide">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Dead by Daylight1</h5>
+                        <p>Dead by Daylight es un juego de terror multijugador (4 contra 1) en el que uno de los jugadores adopta el rol de asesino salvaje mientras que los otros cuatro juegan como supervivientes que tratan de escapar para no ser capturados, torturados y asesinados.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="imagenes para el proyecto/word z.webp" alt="Second slide">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>World War Z: Aftermath </h5>
+                        <p>World War Z: Aftermath es el shooter cooperativo de zombis definitivo basado en el taquillazo de Paramount Pictures y el siguiente paso de World War Z, el éxito que ha cautivado a más de 20 millones de jugadores. Cambia el curso del apocalipsis zombi en consolas y en PC con cross-play completo.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="imagenes para el proyecto/half.jpg" alt="Third slide">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Half-Life: Alyx </h5>
+                        <p>Half-Life: Alyx es un videojuego perteneciente al género de disparos en primera persona en realidad virtual (VR) desarrollado y publicado por Valve Corporation. Es el primer videojuego de la serie Half-Life desde el lanzamiento de Half-Life 2: Episode Two en 2007, y tiene lugar entre los eventos de Half-Life y Half-Life 2. La historia sigue a Alyx Vance, quien aparece como personaje jugador por primera vez, y su padre Eli en su lucha contra una ocupación de la Tierra por la Alianza. </p>
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+        <h2>Tambien podria Interesarte algun videojuego de estos</h2>
+        <div class="row mt-4">
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="imagenes para el proyecto/counter.webp" class="card-img-top" alt="Juego en oferta 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Counter Strike: Source</h5>
+                        <p class="card-text">Precio: $29.99 <del>$59.99</del></p>
+                        <button class="btn btn-primary btn-comprar" data-toggle="modal" data-target="#purchaseModal" data-title="Juego en Oferta 1" data-price="$29.99 <del>$59.99</del>">Comprar</button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="imagenes para el proyecto/the walking.jpg" class="card-img-top" alt="Juego en oferta 2">
+                    <div class="card-body">
+                        <h5 class="card-title">The Walking Dead Season two</h5>
+                        <p class="card-text">Precio: $19.99 <del>$49.99</del></p>
+                        <button class="btn btn-primary btn-comprar" data-toggle="modal" data-target="#purchaseModal" data-title="Juego en Oferta 2" data-price="$19.99 <del>$49.99</del>">Comprar</button>
+                    </div>
+                </div>
+            </div>
+           
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="imagenes para el proyecto/halo.jpg" class="card-img-top" alt="Juego en oferta 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Halo</h5>
+                        <p class="card-text">Precio: $9.99 <del>$39.99</del></p>
+                        <button class="btn btn-primary btn-comprar" data-toggle="modal" data-target="#purchaseModal" data-title="Juego en Oferta 3" data-price="$9.99 <del>$39.99</del>">Comprar</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="imagenes para el proyecto/amog.jpeg" class="card-img-top" alt="Juego en oferta 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Among US</h5>
+                        <p class="card-text">Precio: $9.99 <del>$39.99</del></p>
+                        <button class="btn btn-primary btn-comprar" data-toggle="modal" data-target="#purchaseModal" data-title="Juego en Oferta 3" data-price="$9.99 <del>$39.99</del>">Comprar</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="imagenes para el proyecto/call black.jpg" class="card-img-top" alt="Juego en oferta 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Call of Duty: Black Ops III</h5>
+                        <p class="card-text">Precio: $15.99 <del>$39.99</del></p>
+                        <button class="btn btn-primary btn-comprar" data-toggle="modal" data-target="#purchaseModal" data-title="Juego en Oferta 3" data-price="$9.99 <del>$39.99</del>">Comprar</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="imagenes para el proyecto/tekken.jpeg" class="card-img-top" alt="Juego en oferta 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Tekken 8</h5>
+                        <p class="card-text">Precio: $22.99 <del>$30.99</del></p>
+                        <button class="btn btn-primary btn-comprar" data-toggle="modal" data-target="#purchaseModal" data-title="Juego en Oferta 3" data-price="$9.99 <del>$39.99</del>">Comprar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <h2 class="text-center mt-5">Videojuegos que llegaran Proximamente en OFERTA. NO TE LO PIERDAS!</h2>
+        <div class="row mt-4">
+            <div class="col-md-6">
+                <div class="video-card">
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe class="embed-responsive-item" src="videos para el proyecto/Mortal Kombat 11 - Official Launch Trailer.mp4" allowfullscreen></iframe>
+                    </div>
+                    <h5 class="card-text">Mortal Kombat 11</h5>
+                    <p class="text-center">Mortal Kombat 11 llegara proximamente con descuento apra que puedas disfrutar de este gran juego de pelea. Este juego ofrece una experiencia única con gráficos impresionantes y una jugabilidad envolvente.</p>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="video-card">
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe class="embed-responsive-item" src="videos para el proyecto/Call of Duty_ Modern Warfare II - Tráiler de LANZAMIENTO PS5 en ESPAÑOL _ PlayStation España.mp4" allowfullscreen></iframe>
+                    </div>
+                    <h5 class="card-text">CALL OF DUTY: Modern Warfare II</h5>
+                    <p class="text-center">CALL OF DUTY: Modern Warfare II llegara proximamente con un descuento impresionante disfruta de este juego de campaña o multijugador. Explora un mundo vasto y lleno de aventuras, con una historia emocionante y personajes memorables.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="purchaseModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalGameTitle">Juego en Oferta</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p id="modalGamePrice">Precio: $9.99 <del>$39.99</del></p>
+                    <label for="paymentMethod">Selecciona método de pago:</label>
+                    <select class="form-control" id="paymentMethod">
+                        <option>Efectivo</option>
+                        <option>Crédito / Débito</option>
+                        <option>Transferencia bancaria</option>
+                    </select>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+                    <button id="confirmPurchase" type="button" class="btn btn-primary">Confirmar Compra</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer bg-dark text-white text-center py-3">
+        &copy; 2024 Tienda de Videojuegos. Todos los derechos reservados.
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="ofertasscript.js"></script>
+</body>
+</html>
